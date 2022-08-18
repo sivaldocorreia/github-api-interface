@@ -22,6 +22,10 @@ const Profile = () => {
             </a>
           </S.WrapperUserGeneric>
           <S.WrapperUserGeneric>
+            <h3>Bio:</h3>
+            <span>{githubState.user.bio}</span>
+          </S.WrapperUserGeneric>
+          <S.WrapperUserGeneric>
             <h3>Company:</h3>
             <span>{githubState.user.company}</span>
           </S.WrapperUserGeneric>

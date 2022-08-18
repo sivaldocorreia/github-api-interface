@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as S from "./styled";
 import useGithub from "../../hooks/github-hooks";
 
-const Header = () => {
+const Search = () => {
   const { getUser } = useGithub();
   const [usernameForSearch, setUsernameForSearch] = useState();
 
@@ -12,19 +12,21 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <section>
+    <S.WrapperSearch>
       <S.Wrapper>
         <input
           type="text"
-          placeholder="Digite o username para pesquisa..."
+          placeholder="Procurar no GitHub"
           onChange={(event) => setUsernameForSearch(event.target.value)}
         />
         <button type="submit" onClick={submitGetUser}>
           <span>Buscar</span>
         </button>
       </S.Wrapper>
-    </header>
+    </S.WrapperSearch>
+    </section>
   );
 };
 
-export default Header;
+export default Search;

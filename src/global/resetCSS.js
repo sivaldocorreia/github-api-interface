@@ -38,7 +38,8 @@ html {
 
 body {
   margin: 0;
-  font-family: roboto,sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #FFFFFF;
 }
 
 /**

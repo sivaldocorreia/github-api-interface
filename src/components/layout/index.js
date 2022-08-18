@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "../header";
+import Navbar from "../navbar";
+import Search from "../search";
 import * as S from "./styled";
 
 const Layout = ({ children }) => {
   return (
     <S.WrapperLayout>
-      <Header />
+      <Navbar />
+      <Search />
       {children}
     </S.WrapperLayout>
   );

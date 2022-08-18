@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
   align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px;
 `;
 
 export const WrapperInfoUser = styled.div`
@@ -56,6 +60,6 @@ export const WrapperUserGeneric = styled.div`
 
 export const WrapperImage = styled.img`
   border-radius: 50%;
-  width: 200px;
-  margin: 8px;
+  width: 10rem;
+  margin: 20px;
 `;

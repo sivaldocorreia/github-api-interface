@@ -1,0 +1,102 @@
+
+.nav--bar {
+    height: 62px;
+    display: flex;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background-color: #FFFF;
+    width: 100%;
+}
+
+.nav--bar .leftContainer {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links,a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2em;
+    color: #24292f;
+}
+
+.nav--bar .rightContainer {
+    flex: 50%;
+    background-color: white;
+}
+
+.nav--bar .rightContainer .links {
+    max-height: 80px;
+}
+
+.nav--bar .rightContainer .links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+.nav--logo {
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.nav--bar .rightContainer button {
+    display: none;
+    margin-right: 1px;
+    position: fixed;
+    right: 20px;
+}
+
+.navr--bar .rightContainer #hidden {
+    display:flex;
+}
+
+@media only screen and (max-width: 650px) {
+
+    .nav--bar {
+        position: fixed;
+        top:0;
+        z-index: 2;
+    }
+    .nav--bar .rightContainer button {
+        display: flex;
+    }
+
+    .nav--bar .rightContainer .links {
+        display: none;
+    }
+
+    .nav--bar .rightContainer #hidden {
+        position: fixed;
+        left: 0;
+        top: 40px;
+        max-height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+        font-size: 1rem;
+        background-color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navr--bar .rightContainer #hidden a {
+        margin: 30px;
+        font-size: 1.2rem;
+    }
+
+
+
+}

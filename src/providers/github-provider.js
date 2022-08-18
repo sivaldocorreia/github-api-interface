@@ -25,6 +25,7 @@ const GithubProvider = ({ children }) => {
       following: 0,
       public_gists: 0,
       public_repos: 0,
+      bio: undefined,
     },
     repositories: [],
     starred: [],
@@ -55,6 +56,7 @@ const GithubProvider = ({ children }) => {
             following: data.following,
             public_gists: data.public_gists,
             public_repos: data.public_repos,
+            bio: data.bio,
           },
         }));
       })

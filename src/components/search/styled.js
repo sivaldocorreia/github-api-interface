@@ -1,28 +1,36 @@
 import styled from "styled-components";
 
+export const WrapperSearch = styled.div`
+display: flex;
+justify-content: center;
+`;
+
 export const Wrapper = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  width: 70%;
   padding: 4px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-bottom: 50px;
 
   input {
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
     height: 44px;
-    padding: 8px;
-    font-weight: 500;
+    padding: 10px;
+    font-weight: 600;
   }
 
   button {
-    background-color: #225ed8;
+    background-color: black;
     padding: 8px 16px;
     margin: 0 16px;
     border-radius: 8px;
+    margin-right: 30px;
 
     &:hover {
-      background-color: #2c5282;
+      background-color: grey;
       box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.2);
     }
 
